@@ -1,12 +1,12 @@
 
 import { useParams, useNavigate } from "react-router-dom";
-import {museumData} from "../assets/assets.js";
+import {museumsData} from "../assets/assets.js";
 import "../css files/MuseumDetails.css";
 
 const MuseumDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const item = museumData.find((m) => m.id === id);
+  const item = museumsData.find((m) => m.id === id);
 
   if (!item) return <p>Item not found</p>;
 
@@ -16,7 +16,7 @@ const MuseumDetails = () => {
   return (
     <div className="details-container">
       <button onClick={() => navigate(-1)}>← Back</button>
-      <img src={item.image} alt={item.name} />
+      <img src={item.images} alt={item.name} />
       <h1>{item.name}</h1>
       <p>{item.longDescription}</p>
 

@@ -6,7 +6,7 @@ import Navbar from './components/Navbar.jsx'
 import Museum from './pages/Museum.jsx'
 import MuseumDetails from './pages/MuseumDetails.jsx'
 import MyBookings from './pages/MyBookings.jsx'
-import Chatbot from './pages/Chatbot.jsx'
+import Chatbot from './pages/BookingChatbot.jsx'
 import HelpChat from './pages/HelpChat.jsx'
 
 

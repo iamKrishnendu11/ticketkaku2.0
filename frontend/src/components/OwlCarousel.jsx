@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import { museumData } from "../assets/assets.js";
+import { museumsData } from "../assets/assets.js";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css files/OwlCarousel.css"; 
@@ -29,9 +29,9 @@ const OwlCarousel = () => {
     <div id="owl" className="carousel-container">
       <h2 className="carousel-title">Explore the Top Places</h2>
       <Slider {...settings}>
-        {museumData.slice(0,9).map((item) => (
+        {museumsData.slice(0,9).map((item) => (
           <div className="carousel-card" key={item.id}>
-            <img src={item.image} alt={item.name} />
+            <img src={item.images} alt={item.name} />
             <h3>{item.name}</h3>
             
           </div>
